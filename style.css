@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Police de caractère */
+}
+
+.header {
+    background-color: #4CAF50; /* Couleur de fond du header */
+    padding: 20px; /* Espacement interne */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement centré */
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-grow: 2;
+}
+
+.left {
+    background-color: #f9f9f9; /* Couleur de fond du panneau gauche */
+    padding: 20px; /* Espacement interne */
+    width: 50vw; /* Prendre de l'espace */
+}
+
+.right {
+    background-color: #f0f0f0; /* Couleur de fond du panneau droit */
+    padding: 20px; /* Espacement interne */
+    width: 50vw; /* Prendre de l'espace */
+    text-align: center;
+}
+
+.footer {
+    height: 20vh;
+    background-color: #333; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement centré */
+    padding: 10px; /* Espacement interne */
+}
+
+#colorDisplay {
+    width: 100px; /* Largeur de l'affichage de couleur */
+    height: 100px; /* Hauteur de l'affichage de couleur */
+    border: 2px solid #000; /* Bordure */
+    margin: 20px; /* Marges */
+}
+
+#ldrIcon {
+    font-size: 100px; /* Taille de l'icône */
+    color: gold; /* Couleur de l'icône */
+    transition: opacity 0.3s ease; /* Transition douce pour les changements d'opacité */
+    margin-top: 20px;
+}
+
+.bulle {
+    background-color: orange; /* Couleur de fond de la bulle */
+    border-radius: 50%; /* Coins arrondis */
+    margin: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white; /* Couleur du texte dans la bulle */
+}
+
+.bulle > p {
+    position: relative;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Supprime le style par défaut sur Safari */
+    width: 100%; /* Largeur des curseurs */
+    margin: 10px 0; /* Marges */
+    background: #ddd; /* Couleur de fond */
+    height: 5px; /* Hauteur de la barre */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Supprime le style par défaut sur Safari */
+    appearance: none; /* Supprime le style par défaut */
+    width: 20px; /* Largeur du bouton */
+    height: 20px; /* Hauteur du bouton */
+    border-radius: 50%; /* Coin arrondi */
+    background: #4CAF50; /* Couleur du bouton */
+    cursor: pointer; /* Curseur pointer */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Largeur du bouton */
+    height: 20px; /* Hauteur du bouton */
+    border-radius: 50%; /* Coin arrondi */
+    background: #4CAF50; /* Couleur du bouton */
+    cursor: pointer; /* Curseur pointer */
+}
+
+button {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    margin: 10px 0; /* Marges */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer */
+    font-size: 16px; /* Taille de police */
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+}
+
+/* Media queries pour responsivité */
+@media screen and (min-width: 768px) {
+    .content {
+        flex-direction: row; /* Alignement en ligne */
+    }
+
+    .left {
+        order: 1; /* Ordre du panneau gauche */
+    }
+
+    .right {
+        order: 2; /* Ordre du panneau droit */
+    }
+}

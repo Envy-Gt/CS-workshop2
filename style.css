@@ -38,31 +38,33 @@ body {
 }
 
 .footer {
-    height: 20vh;
+    height: 15vh;
     background-color: #333; /* Couleur de fond du footer */
     color: white; /* Couleur du texte */
     text-align: center; /* Alignement centré */
-    padding: 10px; /* Espacement interne */
+    padding: 50px; /* Espacement interne */
+    
 }
 
 #colorDisplay {
     width: 100px; /* Largeur de l'affichage de couleur */
     height: 100px; /* Hauteur de l'affichage de couleur */
     border: 2px solid #000; /* Bordure */
-    margin: 20px; /* Marges */
+    margin-left: 20vw;
+    margin-top: 10px; /* Marges */
 }
 
 #ldrIcon {
-    font-size: 100px; /* Taille de l'icône */
+    font-size: 200px; /* Taille de l'icône */
     color: gold; /* Couleur de l'icône */
     transition: opacity 0.3s ease; /* Transition douce pour les changements d'opacité */
-    margin-top: 20px;
+    margin-top: 30px;
 }
-
+ /* 
 .bulle {
     background-color: orange; /* Couleur de fond de la bulle */
-    border-radius: 50%; /* Coins arrondis */
-    margin: 10px;
+   /*   border-radius: 50%; /* Coins arrondis */
+   /*  margin: 10px;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -71,11 +73,12 @@ body {
     align-items: center;
     padding: 10px;
     color: white; /* Couleur du texte dans la bulle */
-}
+/* }  
+
 
 .bulle > p {
     position: relative;
-}
+}*/
 
 input[type="range"] {
     -webkit-appearance: none; /* Supprime le style par défaut sur Safari */

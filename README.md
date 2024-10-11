@@ -1,3 +1,6 @@
+Sketch et sitemap : 
+(https://github.com/user-attachments/assets/13267fc4-ac33-40ba-851b-385b33c35234)
+
 capture d'écran du FIGMA : 
 https://github.com/user-attachments/assets/588c86fb-7ccd-4853-ac3c-100d0a63827c
 

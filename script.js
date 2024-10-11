@@ -51,13 +51,13 @@ function updateLdrIcon(ldrValue) {
     // Déterminer l'icône à afficher en fonction de la valeur LDR
     if (ldrValue < 5) {
         ldrIcon.innerHTML = "🌑"; // Très sombre (Lune noire)
-    } else if (ldrValue >= 5 && ldrValue < 10) {
+    } else if ( ldrValue < 10) {
         ldrIcon.innerHTML = "🌒"; // Légèrement lumineux (croissant de lune)
-    } else if (ldrValue >= 10 && ldrValue < 20) {
+    } else if (ldrValue < 20) {
         ldrIcon.innerHTML = "🌓"; // Moyennement lumineux (demi-lune)
-    } else if (ldrValue >= 20 && ldrValue < 40) {
+    } else if ( ldrValue < 40) {
         ldrIcon.innerHTML = "🌔"; // Lumineux (croissant presque plein)
-    } else if (ldrValue >= 40 && ldrValue < 50) {
+    } else if (ldrValue < 60) {
         ldrIcon.innerHTML = "🌕"; // Très lumineux (pleine lune)
     } else {
         ldrIcon.innerHTML = "☀️"; // Pleine lumière du jour (soleil)
